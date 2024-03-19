@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="contact">
+    <div id="contact" className="contact overflow-hidden">
       <div className="d-flex justify-content-center">
         <h1>Contact</h1>
       </div>
