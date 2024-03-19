@@ -11,11 +11,13 @@ const Contact = () => {
         method="post"
         className="px-3"
       >
-        <div className="mb-3" data-aos="fade-left" data-aos-duration={1000}>
-          <label htmlFor="name" className="form-label">
+        <div className="mb-3">
+          <label data-aos="fade-left" data-aos-duration={1000} htmlFor="name" className="form-label">
             Name
           </label>
           <input
+            data-aos="fade-left"
+            data-aos-duration={1000}
             id="name"
             name="name"
             type="text"
@@ -24,11 +26,13 @@ const Contact = () => {
             required
           />
         </div>
-        <div className="mb-3" data-aos="fade-right" data-aos-duration={1000}>
-          <label htmlFor="name" className="form-label">
+        <div className="mb-3">
+          <label data-aos="fade-right" data-aos-duration={1000} htmlFor="name" className="form-label">
             Email
           </label>
           <input
+            data-aos="fade-right"
+            data-aos-duration={1000}
             id="email"
             name="email"
             type="email"
@@ -37,11 +41,13 @@ const Contact = () => {
             required
           />
         </div>
-        <div className="mb-3" data-aos="fade-left" data-aos-duration={1000}>
-          <label htmlFor="name" className="form-label">
+        <div className="mb-3">
+          <label data-aos="fade-left" data-aos-duration={1000} htmlFor="name" className="form-label">
             Message
           </label>
           <textarea
+            data-aos="fade-left"
+            data-aos-duration={1000}
             id="message"
             name="message"
             rows={3}
