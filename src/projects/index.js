@@ -3,7 +3,7 @@ import E_Commerce from "../assets/e-commerce.png";
 import landing_page from "../assets/landing-page.png";
 import dice_game from "../assets/dice-game.png";
 import text_utils from "../assets/text-utils.png";
-import dashboard-page from "../assets/dashboard-page.png";
+import dashboard_page from "../assets/dashboard-page.png";
 
 const projects = [
   {
@@ -34,7 +34,7 @@ const projects = [
   {
     name: "Dashboard-Page",
     link: "https://dashboard-page-eight.vercel.app/",
-    image: dashboard-page,
+    image: dashboard_page,
   },
 ];
 
