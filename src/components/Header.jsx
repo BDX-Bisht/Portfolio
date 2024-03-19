@@ -7,8 +7,8 @@ const Header = () => {
       className="navbar navbar-expand-lg fixed-top py-3"
       data-bs-theme="dark"
     >
-      <div className="container px-4 px-md-0">
-        <a className="navbar-brand" href="#dipanshu">
+      <div className="container">
+        <a className="navbar-brand px-4 px-md-0" href="#dipanshu">
           <FaLaptopCode /> <i> Dipanshu Bisht</i>
         </a>
         <button
