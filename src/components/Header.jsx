@@ -8,7 +8,7 @@ const Header = () => {
       data-bs-theme="dark"
     >
       <div className="container">
-        <a className="navbar-brand px-4 px-md-0" href="#dipanshu">
+        <a className="navbar-brand px-3 px-md-0" href="#dipanshu">
           <FaLaptopCode /> <i> Dipanshu Bisht</i>
         </a>
         <button
