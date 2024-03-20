@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import projects from "../projects/index";
+import { ModeContext } from "../context/Mode";
 
 const Projects = () => {
+  const { mode } = useContext(ModeContext);
   return (
     <div id="projects" className="projects">
       <div className="d-flex justify-content-center">
@@ -27,7 +29,11 @@ const Projects = () => {
                     <h3>{item.name}</h3>
                   </div>
                 </div>
-                <h4 className="text-center d-block d-md-none my-3">
+                <h4
+                  className={`text-center d-block d-md-none my-3 text-${
+                    mode === "light" ? "dark" : "light"
+                  }`}
+                >
                   {item.name}
                 </h4>
               </a>
