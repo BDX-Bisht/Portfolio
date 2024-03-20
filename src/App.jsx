@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
+import Cursor from "./components/AnimatedCursor";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos";
@@ -18,6 +19,7 @@ function App() {
   }, [Aos]);
   return (
     <>
+      <Cursor />
       <Header />
       <Home />
       <About />
