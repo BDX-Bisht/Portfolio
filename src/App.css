@@ -2,20 +2,15 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  color: white;
-}
-
-body {
-  background-color: #000a1c !important;
 }
 
 .btn-primary {
-  background: #9399b3 !important;
+  background: #6470a8 !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .btn-primary:hover {
-  background: #818597 !important;
+  background: #41529c !important;
 }
 
 .text-primary {
@@ -43,12 +38,6 @@ video {
   overflow: hidden;
 }
 
-.navbar,
-footer {
-  z-index: 99;
-  background-color: #071122 !important;
-}
-
 #dipanshu h1 {
   font-size: 60px;
   font-weight: bold;
@@ -67,7 +56,6 @@ footer {
 
 .about {
   padding-top: 5rem;
-  background-color: #000a1c !important;
 }
 
 .about h1,

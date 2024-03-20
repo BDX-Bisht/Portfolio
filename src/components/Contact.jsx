@@ -12,7 +12,12 @@ const Contact = () => {
         className="px-3"
       >
         <div className="mb-3">
-          <label data-aos="fade-left" data-aos-duration={1000} htmlFor="name" className="form-label">
+          <label
+            data-aos="fade-left"
+            data-aos-duration={1000}
+            htmlFor="name"
+            className="form-label"
+          >
             Name
           </label>
           <input
@@ -27,7 +32,12 @@ const Contact = () => {
           />
         </div>
         <div className="mb-3">
-          <label data-aos="fade-right" data-aos-duration={1000} htmlFor="name" className="form-label">
+          <label
+            data-aos="fade-right"
+            data-aos-duration={1000}
+            htmlFor="name"
+            className="form-label"
+          >
             Email
           </label>
           <input
@@ -42,7 +52,12 @@ const Contact = () => {
           />
         </div>
         <div className="mb-3">
-          <label data-aos="fade-left" data-aos-duration={1000} htmlFor="name" className="form-label">
+          <label
+            data-aos="fade-left"
+            data-aos-duration={1000}
+            htmlFor="name"
+            className="form-label"
+          >
             Message
           </label>
           <textarea

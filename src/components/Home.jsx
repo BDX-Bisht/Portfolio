@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import dipanshu from "../assets/dipanshu.jpeg";
 import myresume from "../assets/myresume.pdf";
 import Typewriter from "typewriter-effect";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-import Particles_BG from "./Particles";
+import { ModeContext } from "../context/Mode";
+import Dark_Particles from "./Dark_Particles";
+import Light_Particles from "./Light_Particles";
 
 const Home = () => {
+  const { mode } = useContext(ModeContext);
   return (
     <div id="dipanshu" className="container-fluid p-0">
       <div className="container position-relative z-3 px-4 px-md-0">
@@ -33,7 +36,7 @@ const Home = () => {
               data-aos="fade-up"
               data-aos-duration={1000}
               href={myresume}
-              className="btn btn-primary mt-4 mt-md-5 px-auto py-auto px-md-4 py-md-3"
+              className="btn btn-primary mt-4 mt-md-5 px-auto py-auto px-md-4 py-md-2 fw-semobold"
               target="_"
               download="./assets/myresume.pdf"
             >
@@ -41,21 +44,27 @@ const Home = () => {
             </a>
             <div data-aos="fade-up" data-aos-duration={1000} className="links">
               <a
-                className="textdecoration-none"
+                className={`text-decoration-none text-${
+                  mode === "dark" ? "light" : "dark"
+                }`}
                 href="https://github.com/BDX-Bisht"
                 target="_blank"
               >
                 <FaGithub size={30} />
               </a>
               <a
-                className="text-decoration-none"
+                className={`text-decoration-none text-${
+                  mode === "dark" ? "light" : "dark"
+                }`}
                 href="https://www.linkedin.com/in/dipanshu-bisht-5b02b8279/"
                 target="_blank"
               >
                 <FaLinkedinIn size={30} />
               </a>
               <a
-                className="text-decoration-none"
+                className={`text-decoration-none text-${
+                  mode === "dark" ? "light" : "dark"
+                }`}
                 href="https://wa.link/wfd9gd"
                 target="_blank"
               >
@@ -73,7 +82,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Particles_BG />
+      {mode === "dark" ? <Dark_Particles /> : <Light_Particles />}
     </div>
   );
 };

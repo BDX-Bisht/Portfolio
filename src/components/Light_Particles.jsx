@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-const Particles_BG = () => {
+const Light_Particles = () => {
   const [init, setInit] = useState(false);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -20,7 +20,7 @@ const Particles_BG = () => {
     () => ({
       background: {
         color: {
-          value: "#000a1c",
+          value: "#dddd",
         },
       },
       fpsLimit: 120,
@@ -47,10 +47,10 @@ const Particles_BG = () => {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#000",
         },
         links: {
-          color: "#ffffff",
+          color: "#000",
           distance: 100,
           enable: true,
           opacity: 0.5,
@@ -100,4 +100,4 @@ const Particles_BG = () => {
   return <></>;
 };
 
-export default Particles_BG;
+export default Light_Particles;
