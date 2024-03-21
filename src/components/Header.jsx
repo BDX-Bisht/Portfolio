@@ -8,7 +8,7 @@ const Header = () => {
   const { mode, modeToggler } = useContext(ModeContext);
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top py-3 shadow-md ${
+      className={`navbar navbar-expand-lg fixed-top py-auto py-md-3 shadow-md ${
         mode ? mode : "light"
       }`}
       data-bs-theme={mode}
@@ -32,7 +32,7 @@ const Header = () => {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+          <ul className="navbar-nav ms-3 mt-2 mt-md-0 ms-md-auto mb-0 mb-md-2 mb-lg-0 gap-2 gap-md-4">
             <li className="nav-item">
               <a
                 className="nav-link active"

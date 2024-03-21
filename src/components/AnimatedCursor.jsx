@@ -3,7 +3,6 @@ import AnimatedCursor from "react-animated-cursor";
 import { ModeContext } from "../context/Mode";
 
 const Cursor = () => {
-  const { mode } = useContext(ModeContext);
   
   return (
     <AnimatedCursor
@@ -17,7 +16,7 @@ const Cursor = () => {
         zIndex: 9999,
       }}
       innerStyle={{
-        backgroundColor: mode === "dark" ? "#508dff" : "#000000",
+        backgroundColor: "#508dff",
         zIndex: 9999,
       }}
       trailingSpeed={8}
