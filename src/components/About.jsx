@@ -25,7 +25,7 @@ const About = () => {
             >
               Hello
             </h2>
-            <p data-aos="fade-up" data-aos-duration={1000}>
+            <p data-aos="fade-up" data-aos-duration={1000} style="font-size:17px">
               Aspiring full stack web developer with a strong educational
               background and a passion for creating dynamic and user-friendly
               web applications. Currently pursuing a web development course, I
