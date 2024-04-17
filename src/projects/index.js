@@ -4,6 +4,7 @@ import landing_page from "../assets/landing-page.png";
 import dice_game from "../assets/dice-game.png";
 import text_utils from "../assets/text-utils.png";
 import dashboard_page from "../assets/dashboard-page.png";
+import quiz_page from "../assets/quiz-app.png";
 
 const projects = [
   {
@@ -35,6 +36,11 @@ const projects = [
     name: "Dashboard-Page",
     link: "https://dashboard-page-eight.vercel.app/",
     image: dashboard_page,
+  },
+  {
+    name: "Quiz-Game",
+    link: "https://quiz-game-ten-phi.vercel.app/",
+    image: quiz_page,
   },
 ];
 
